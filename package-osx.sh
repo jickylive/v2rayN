@@ -6,7 +6,7 @@ Version="$3"
 
 FileName="v2rayN-${Arch}.zip"
 wget -nv -O $FileName "https://github.com/2dust/v2rayN-core-bin/raw/refs/heads/master/$FileName"
-7z x $FileName
+unzip $FileName
 cp -rf v2rayN-${Arch}/* $OutputPath
 
 PackagePath="v2rayN-Package-${Arch}"
